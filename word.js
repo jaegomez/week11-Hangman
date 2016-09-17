@@ -37,7 +37,7 @@ function Car(target) {
 	this.guitarGetCar = function(){
 		return this.targetCar.join('');
 	};
-
+	// function to display my car calls getChar function from letter.js
 	this.getCarToShow = function(){
 		var show = '';
 

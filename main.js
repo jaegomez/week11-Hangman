@@ -18,7 +18,7 @@ function promptRunInput() {
 	{
 		type: 'input',
 		name: 'userGuess',
-		message: 'Please enter your guess for a random car:',
+		message: 'Please enter your guess for a chance to win a brand new high-end car:',
 		validate: function (value) {
 
 			var correctInput = /[a-z]|[0-9]/i;
@@ -60,7 +60,7 @@ function promptRunInput() {
 
 		if (userWins) {
 			game.wins++;
-			console.log("You Won!");
+			console.log("You Won! You now receive a brand new" + " " + game.car.getCarToShow());
 		} else if (game.remainingLives > 0) {
 			promptRunInput();
 		} else {
